@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="to-do">
+        <h2>
+          To-do List
+          <img src="images/icon.png" alt="" />
+          <button id="clear" onclick="clearAll()">clear all</button>
+        </h2>
+
+        <div class="row">
+          <input type="text" id="input-box" placeholder="Add your task" />
+          <button id="buttonAdd" onclick="addTask()">Add</button>
+        </div>
+        <ul id="listcontainer">
+          <li>Task1</li>
+          <div class="settings">
+            <i>
+              <iconify-icon icon="gridicons:ellipsis-circle"></iconify-icon>
+            </i>
+            <li>
+              <iconify-icon icon="uil:pen"></iconify-icon>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/bf520e6492.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

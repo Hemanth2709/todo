@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(130deg, #fffb8c, #f0d985);
+    padding: 10px;
+}
+
+.to-do{
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    background: #fff;
+    border-radius: 25px;
+
+}
+
+.to-do h2{
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.to-do h2 img{
+    width: 40px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    background: #F0C38E;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex:1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    color: #312c51;
+    font-size: medium;
+    font-weight: 500;
+}
+
+button{
+    border: none;
+    outline: none;
+    background:#48426D;
+    width: 125px;
+    cursor: pointer;
+    padding: 16px 16px 16px;
+    color: #FFF;
+    font-style:normal;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+ul li{
+    list-style: none;
+    background: #F0C38E;
+    padding: 12px 8px 12px 50px;
+    font-size: 17px;
+    user-select: none;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: 8px;
+}
+
+ul li.checked{
+    text-decoration: line-through;
+    color: #312c51;
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+
+
+ul li span{
+    position: absolute;
+    top: 2px;
+    right: 20px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+#listcontainer li i {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+button clear{
+    border: none;
+    outline: none;
+    width: 125px;
+    cursor: pointer;
+    color: #FFF;
+    font-style:normal;
+    font-weight: 500;
+    cursor: pointer;
+}
+
